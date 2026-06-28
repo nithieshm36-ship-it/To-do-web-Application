@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/@tabler/icons-webfont/2.47.0/tabler-icons.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="todo-wrap">
+    <h1>My tasks</h1>
+
+    <!-- List tabs (Personal, Work, etc.) -->
+    <div class="list-tabs" id="list-tabs"></div>
+
+    <!-- Add task form -->
+    <div class="add-row">
+      <input type="text" id="new-task-input" placeholder="Add a task..." />
+      <input type="date" id="new-task-date" />
+      <input type="time" id="new-task-time" />
+      <button id="add-btn"><i class="ti ti-plus"></i></button>
+    </div>
+
+    <div class="count-label" id="count-label"></div>
+
+    <!-- Task list renders here -->
+    <div id="task-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
